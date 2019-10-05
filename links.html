@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
      <title>Kevin's CSD120 Website</title>
+     <link rel="stylesheet" href="styles/main.css">
      <style>
-        ul li {color: orange;}
+        #useful-links a {color: orange;}
      </style>
 </head>
 <body>
@@ -17,15 +18,15 @@
         </nav>
     </header>
     <main>
-    <section class="useful-links">
+    <section id="useful-links">
        <h1>
        Useful Links
        </h1>
        <ul>
          <li><a href="https://validator.w3.org/nu" target="_blank">HTML Validator</a>
-         <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
-         <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
-         <li><a href="https://caniuse.com/">CanIUse</a></li>
+         <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+         <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></li>
+         <li><a href="https://caniuse.com/" target="_blank">CanIUse</a></li>
        </ul>
        </section>
     </main>
@@ -33,11 +34,11 @@
         <hr>
         <blockquote>
         "I have no special talents. I am passionately curious." <br>
-        <em>
+        <span class="byline"><em>
         &mdash; Albert Einstein
-        </em>
+        </em></span>
         </blockquote>
-        <p>
+        <p id="page-copyright">
         &copy; 
         <a href="mailto:kevin.wade@student.saultcollege.ca?subject=Message%20from%20the%20website%20CSD120&body=Defaulttext"> 
         Kevin Wade 
