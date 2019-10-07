@@ -2,7 +2,7 @@
 body { background-color: aqua;}
 h1, h2 { color: grey;}
 a { color: gold;}
-ul li { color: purple;}
+header nav a { color: purple;}
 .byline { color:rgba(0,0,0,0.5)}
-.page-copyright { color: red}
+#page-copyright { color: red}
 .diffcolor { background-color: blue;}
