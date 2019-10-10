@@ -15,7 +15,7 @@ h1, h2 { color: grey;}
 a { color: gold;}
 header nav a { color: purple;}
 .byline { color:rgba(0,0,0,0.5)}
-#page-copyright { color: red}
+#page-copyright { color: red; text-transform: uppercase; letter-spacing: 3px;}
 >>>>>>> refs/heads/master
 .diffcolor { background-color: blue;}
 .bio { text-indent: 3em; text-align: center; font-size: 12px;}
