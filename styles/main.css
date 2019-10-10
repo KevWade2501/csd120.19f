@@ -1,8 +1,13 @@
 @CHARSET "UTF-8";
-body { background-color: aqua;}
-h1, h2 { color: grey;}
-a { color: gold;}
-ul li { color: purple;}
-.byline { color:rgba(0,0,0,0.5)}
-.page-copyright { color: red}
+
+body { background-color: aqua; font-family: 'Domine', serif;}
+h1 { color: grey; background-image: url(images/gradient.png); background-repeat: repeat-y; font-family: 'Domine', serif;}
+h2 { color: grey; background-image: url(images/gradient.png); background-repeat: repeat-y; font-family: 'Roboto', sans-serif;}
+a { color: gold; text-decoration:none; }
+ul { color: purple; list-style-type: square;}
+li { color: purple;}
+
+.byline { color:rgba(0,0,0,0.5); font-size:"70%";}
 .diffcolor { background-color: blue;}
+.bio { text-indent: 3em; text-align: center; font-size: 12px;}
+.headerlink {list-style-type: none;}
