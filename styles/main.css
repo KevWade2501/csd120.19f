@@ -57,5 +57,11 @@ header nav ul {
 footer {
     text-align: center; 
     font-size: 12px;
+    padding: 3em;
+}
+
+width-wrap {
+    padding: 0 2em 3em;
+    border-color: solid black;
 }
 
