@@ -13,16 +13,14 @@ h1 {
     text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
     background: rgb(76,4,124);
     background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
-    -webkit-background-clip;
-    background-clip: text;
+    -webkit-background-clip: text;
 }
 h2 { 
     color: rgba(255,255,255,0.0); 
     font-family: 'Roboto', sans-serif;
     background: rgb(76,4,124);
     background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
-    -webkit-background-clip;
-    background-clip: text;
+    -webkit-background-clip: text;
 }
 a { 
     color: gold; 
@@ -46,8 +44,8 @@ header nav a {
 }
 header nav ul {
     list-style-type: none;
-    margin-width: none;
-    padding-width: none;
+    margin: 0;
+    padding: 0;
 }
 
 #page-copyright { 
@@ -75,7 +73,7 @@ width-wrap {
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 3em;
-    border-color: rbga(255,255,255,0.3);
+    border-color: black transparent;
     border-left: 1px;
     border-right: 1px;
     border-bottom: 1px;
