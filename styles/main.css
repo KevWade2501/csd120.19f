@@ -9,6 +9,10 @@ h1 {
     background-image: url(../images/gradient.png); 
     background-repeat: repeat-x; 
     font-family: 'Domine', serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(255,255,255,0.9023810207676821) 100%);
+    background-clip: content-box;
 }
 h2 { 
     color: grey; 
@@ -38,6 +42,8 @@ header nav a {
 }
 header nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #page-copyright { 
@@ -62,6 +68,12 @@ footer {
 
 width-wrap {
     padding: 0 2em 3em;
-    border-color: solid black;
+    border-color: rbga(255,255,255,0.3);
+    border: 1px 1px 1px;
+    box-shadow: 0 0 4px rgba(255,255,255,0.2); 
+    background-color: pink;
 }
 
+figure {
+    box-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+}
