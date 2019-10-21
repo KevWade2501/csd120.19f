@@ -3,22 +3,26 @@
 body { 
     background-color: aqua; 
     font-family: 'Domine', serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
 }
 h1 { 
-    color: grey; 
-    background-image: url(../images/gradient.png); 
-    background-repeat: repeat-x; 
+    color: rgba(255,255,255,0.0);  
     font-family: 'Domine', serif;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 52%, rgba(255,255,255,0.9023810207676821) 100%);
-    background-clip: content-box;
+    background: rgb(76,4,124);
+    background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
+    -webkit-background-clip;
+    background-clip: text;
 }
 h2 { 
-    color: grey; 
-    background-image: url(../images/gradient.png); 
-    background-repeat: repeat-x; 
+    color: rgba(255,255,255,0.0); 
     font-family: 'Roboto', sans-serif;
+    background: rgb(76,4,124);
+    background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
+    -webkit-background-clip;
+    background-clip: text;
 }
 a { 
     color: gold; 
@@ -42,8 +46,8 @@ header nav a {
 }
 header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-width: none;
+    padding-width: none;
 }
 
 #page-copyright { 
@@ -63,17 +67,37 @@ header nav ul {
 footer {
     text-align: center; 
     font-size: 12px;
+    margin-bottom: 2em;
     padding: 3em;
 }
 
 width-wrap {
-    padding: 0 2em 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 3em;
     border-color: rbga(255,255,255,0.3);
-    border: 1px 1px 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
     box-shadow: 0 0 4px rgba(255,255,255,0.2); 
     background-color: pink;
 }
 
 figure {
     box-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+}
+
+footer hr {
+    width:50vw;
+    min-width:300px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-top: 3px;
+    border-top-style: solid;
+    border-bottom: 2px;
+    border-bottom-style: dotted;
+    border-left: none;
+    border-right: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
