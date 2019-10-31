@@ -19,6 +19,7 @@ h1 {
 h2 { 
     color: rgba(255,255,255,0.0); 
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
     background: rgb(76,4,124);
     background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
     -webkit-background-clip: text;
@@ -70,19 +71,19 @@ footer {
     padding: 3em;
 }
 
-width-wrap {
+.width-wrap {
+    max-width: 1024px;
     padding-left: 2em;
     padding-right: 2em;
     margin-bottom: 3em;
-    border-color: black transparent;
-    border-left: 1px;
-    border-right: 1px;
-    border-bottom: 1px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
     box-shadow: 0 0 4px rgba(255,255,255,0.2); 
     background-color: pink;
 }
 
-figure {
+figure img {
     box-shadow: 2px 2px 3px rgba(255,255,255,0.5);
     position: relative;
     top: -1em;
@@ -94,10 +95,8 @@ footer hr {
     min-width:300px;
     margin-top: 3em;
     margin-bottom: 2em;
-    border-top: 3px;
-    border-top-style: solid;
-    border-bottom: 2px;
-    border-bottom-style: dotted;
+    border-top: 3px solid;
+    border-bottom: 8px dotted;
     border-left: none;
     border-right: none;
     border-top-right-radius: 8px;
