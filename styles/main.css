@@ -25,7 +25,7 @@ h2 {
     -webkit-background-clip: text;
 }
 a { 
-    color: gold; 
+    color: purple; 
     text-decoration:none; 
 }
 ul { 
@@ -41,13 +41,43 @@ li {
     font-size: 70%;
 }
 
+header {
+    border-top: solid rgba(0,0,0,0.1) 4px;
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+nav {
+    margin-left: 2em;
+    margin-right: 2em;
+    border-bottom: dotted rgba(0,0,0,0.3) 1px;
+    margin-top: -4px;
+}
+
 header nav a { 
     color: purple;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: block;
+    border: solid transparent 4px;
 }
+
+header nav a:hover {
+    border-top: solid purple 4px;
+}
+
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    float: right;
+    overflow: auto;
+}
+
+header nav ul li {
+    float: left;
 }
 
 #page-copyright { 
@@ -83,7 +113,11 @@ footer {
     background-color: pink;
 }
 
-figure img {
+figure {
+    position: relative;
+}
+
+.mugshot {
     box-shadow: 2px 2px 3px rgba(255,255,255,0.5);
     position: relative;
     top: -1em;
@@ -104,15 +138,30 @@ footer hr {
 }
 
 .paperclip{
-    background-image: url(..\paperclip.png);
+    background-image: url(../images/paperclip.png);
+    background-size: contain;
     width: 50px;
     height: 50px;
-    background-size: contain;
     position: absolute;
-    top: 10px;
-    right: 7px;
+    top: -10px;
+    right: -7px;
 }
 
 .clearer{
     clear: right;
+}
+
+#top {
+    
+}
+
+.back-to-top {
+    text-align: right;
+    margin-right: -0.5em;
+    opacity: 0.5;
+    bottom: 3.5em;
+}
+
+.back-to-top:hover {
+    opacity: 1;
 }
