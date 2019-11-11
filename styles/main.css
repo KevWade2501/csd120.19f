@@ -10,6 +10,11 @@ body {
 * {
     box-sizing: border-box;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+}
 h1 { 
     color: rgba(255,255,255,0.0);  
     font-family: 'Domine', serif;
@@ -74,14 +79,16 @@ header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: center;
+    
 }
 header nav {
     overflow: auto;
 }
 
 header nav ul li {
-    float: left;
+    
 }
 
 #page-copyright { 
@@ -94,8 +101,12 @@ header nav ul li {
     background-color: blue;
 }
 
+.bio {
+    grid-column: span 2;
+}
+
 .bio p { 
-    text-indent: 3em; 
+    text-indent: 3em;
 }
 
 footer {
