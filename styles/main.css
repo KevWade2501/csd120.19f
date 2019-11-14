@@ -6,6 +6,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 1024px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 * {
     box-sizing: border-box;
@@ -114,6 +117,7 @@ footer {
     font-size: 12px;
     margin-bottom: 2em;
     padding: 3em;
+    margin-top: auto;
 }
 
 .width-wrap {
@@ -182,4 +186,36 @@ footer hr {
 
 .back-to-top:hover {
     opacity: 1;
+}
+
+.glossarysection {
+    grid-column: span 2;
+}
+
+.gallery {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+section div a img {
+    width: 100%;
+    display: block;
+    filter: grayscale(90%);
+}
+
+section div a img:hover {
+    filter: none;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+
+.column-span-2 {
+    grid-column: span 2;
 }
