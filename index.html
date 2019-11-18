@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -12,8 +13,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href ="normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/CSD120Mobile.css">
 
     <title>Kevin's CSD120 Website</title>
 </head>
@@ -21,11 +23,12 @@
 <div class="width-wrap">
     <header id="top">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="links.html">Links</a></li>
-                <li><a href="glossary.html">Gallery</a></li>
-            </ul>
+            <div class="burger"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Gallery</a></li>
+                </ul>
         </nav>
     </header>
     <main>
@@ -145,6 +148,7 @@
         </a>
         2019
         </p>
+        <img src="sc-logo.png" sizes="70px" srcset="sc-logo@1.5x.png 105w", "sc-logo@2x.png 140w", "sc-logo@3x.png 210w", "sc-logo@4x.png 280x">
     </footer>
     <div class="back-to-top">
     <a href="#top">  ◤ </a>
