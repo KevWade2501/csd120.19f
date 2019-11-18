@@ -8,7 +8,6 @@ body {
     max-width: 1024px;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
 }
 * {
     box-sizing: border-box;
@@ -130,6 +129,8 @@ footer {
     border-bottom: 1px solid rgba(0,0,0,0.3);
     box-shadow: 0 0 4px rgba(255,255,255,0.2); 
     background-color: pink;
+    display: flex;
+    flex-direction: column;
 }
 
 figure {
@@ -188,7 +189,8 @@ footer hr {
     opacity: 1;
 }
 
-.glossarysection {
+#useful-links,
+.glossary {
     grid-column: span 2;
 }
 
@@ -202,13 +204,13 @@ footer hr {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-section div a img {
+.gallery div a img {
     width: 100%;
     display: block;
     filter: grayscale(90%);
 }
 
-section div a img:hover {
+.gallery div a img:hover {
     filter: none;
 }
 
