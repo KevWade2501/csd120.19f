@@ -37,6 +37,7 @@
     }
     
     header nav a:hover {
+        border: none;
         text-decoration: underline;
     }
     
