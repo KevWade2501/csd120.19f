@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 @media screen and (max-width:768px) {
-    footer {
+    footer hr {
         display:none;
     }
     
@@ -37,6 +37,7 @@
     }
     
     header nav a:hover {
+        border: none;
         text-decoration: underline;
     }
     
