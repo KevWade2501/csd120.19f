@@ -184,6 +184,36 @@
                 </a>
             </div>
         </section>
+        <section class="survey">
+            <h2>Survey<h2>
+            <form>
+                <label for="name_input">What is your name?</label>
+                <input type="text" name="name_input" id="name_input" required>
+                <label for="email">What is your email?</label>
+                <input type="text" name="email_input" id="email" required>
+                <label for:"best_integer">Which integer is best?</label>
+                <input type="number" name="integer_input" id="best_integer">
+                <label for="best_day">Which day is best?</label>
+                <input type="date" name="best_day" id="best_day">
+                <label for="best_bear">Which bear is best?</label>
+                <select id="best_bear">
+                    <option></option>
+                    <option>Black</option>
+                    <option>Brown</option>
+                    <option>Care</option>
+                    <option>Polar</option>
+                    <option>Panda</option>
+                    <option>Teddy</option>
+                </select>
+                <label>Do you like radio buttons?</label>
+                <label><input type="radio" name="decision" value="yes">Yes</label>
+                <label><input type="radio" name="decision" value="no">No</label>
+                <label><input type="radio" name="decision" value="?" selected>None of your business</label>
+                <label for="life_meaning">What is the meaning of Life?</label>
+                <input type="textarea" name="lifesplaination" id="life_meaning" placeholder="Enter the correct answer here" rows="10">
+                <input type="button" value="SEND" id="send">
+            </form>
+        </section>
     </main>
     <footer>
         <hr>

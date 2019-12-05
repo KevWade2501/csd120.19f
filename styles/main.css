@@ -128,7 +128,7 @@ footer {
     border-right: 1px solid rgba(0,0,0,0.3);
     border-bottom: 1px solid rgba(0,0,0,0.3);
     box-shadow: 0 0 4px rgba(255,255,255,0.2); 
-    background-color: pink;
+    background-color: purple;
     display: flex;
     flex-direction: column;
 }
@@ -232,12 +232,42 @@ table{
 }
 
 table hd,
-table td{
+table td {
     background-color:rgba(0,0,0,0.05);
     margin-top:0.3em;
     margin-bottom:0.3em;
     margin-left:1em;
     margin-right:1em;
-    border-left: 3px solid cyan;
-    border-right: 3px solid cyan;
+    border-left: 3px solid purple;
+    border-right: 3px solid purple;
+}
+
+table hd {
+    background-color: rgba(0,0,0,0.10);
+}
+
+table td:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.10);
+}
+
+table tr:nth-of-type(2) {
+    border-top: solid 3px purple;
+}
+
+table tr:nth-of-type(7) {
+    border-top: solid 3px purple;
+}
+
+.survey {
+    grid-column: span 2;
+}
+
+form {
+    display:grid;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.send {
+    margin-top: 1em;
 }
