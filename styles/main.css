@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
-body { 
-    background-color: aqua; 
+body {
+    background-color: aqua;
     font-family: 'Domine', serif;
     margin-left: auto;
     margin-right: auto;
@@ -17,36 +17,36 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
 }
-h1 { 
-    color: rgba(255,255,255,0.0);  
+h1 {
+    color: rgba(255,255,255,0.0);
     font-family: 'Domine', serif;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
     background: rgb(76,4,124);
     background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
     -webkit-background-clip: text;
 }
-h2 { 
-    color: rgba(255,255,255,0.0); 
+h2 {
+    color: rgba(255,255,255,0.0);
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
     background: rgb(76,4,124);
     background: linear-gradient(90deg, rgba(76,4,124,1) 0%, rgba(255,255,255,1) 70%);
     -webkit-background-clip: text;
 }
-a { 
-    color: purple; 
-    text-decoration:none; 
+a {
+    color: cyan;
+    text-decoration:none;
 }
-ul { 
-    color: purple; 
+ul {
+    color: cyan;
     list-style-type: square;
 }
-li { 
-    color: purple;
+li {
+    color: cyan;
 }
 
-.byline { 
-    color:rgba(0,0,0,0.5); 
+.byline {
+    color:rgba(0,0,0,0.5);
     font-size: 70%;
 }
 
@@ -63,8 +63,8 @@ nav {
     margin-top: -4px;
 }
 
-header nav a { 
-    color: purple;
+header nav a {
+    color: blue;
     padding-top: 1em;
     padding-bottom: 0.5em;
     margin-left: 1em;
@@ -74,7 +74,7 @@ header nav a {
 }
 
 header nav a:hover {
-    border-top: solid purple 4px;
+    border-top: solid cyan 4px;
 }
 
 header nav ul {
@@ -83,23 +83,23 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    
+
 }
 header nav {
     overflow: auto;
 }
 
 header nav ul li {
-    
+
 }
 
-#page-copyright { 
-    color: red; 
-    text-transform: uppercase; 
+#page-copyright {
+    color: red;
+    text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.diffcolor { 
+.diffcolor {
     background-color: blue;
 }
 
@@ -107,12 +107,12 @@ header nav ul li {
     grid-column: span 2;
 }
 
-.bio p { 
+.bio p {
     text-indent: 3em;
 }
 
 footer {
-    text-align: center; 
+    text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
     padding: 3em;
@@ -127,7 +127,7 @@ footer {
     border-left: 1px solid rgba(0,0,0,0.3);
     border-right: 1px solid rgba(0,0,0,0.3);
     border-bottom: 1px solid rgba(0,0,0,0.3);
-    box-shadow: 0 0 4px rgba(255,255,255,0.2); 
+    box-shadow: 0 0 4px rgba(255,255,255,0.2);
     background-color: purple;
     display: flex;
     flex-direction: column;
@@ -172,7 +172,7 @@ footer hr {
 }
 
 #top {
-    
+
 }
 
 .back-to-top {
@@ -288,4 +288,8 @@ label {
 
 #life_meaning {
     grid-rows: span 10;
+}
+
+#burger_toggle {
+    display: none;
 }

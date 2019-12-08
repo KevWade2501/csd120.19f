@@ -4,43 +4,50 @@
     footer hr {
         display:none;
     }
-    
+
     .paperclip{
         display:none;
     }
-    
+
     .mugshot{
         float:none;
         margin-left:0;
         margin-right:0;
     }
-    
+
     main{
         display:block;
     }
-    
+
     .row-span-2.col-span-2{
         grid-column: span 1;
         grid-row: span 1;
     }
-    
+
     header nav ul {
         display:flex;
         flex-direction: column;
-        padding-top:1em;
-        padding-bottom:1em;
+        margin-top:1em;
+        margin-bottom:1em;
         text-align:center;
+        height:0;
+        overflow:hidden;
+        transition: height 500ms ease-in-out;
     }
-    
+
+    burger_toggle:checked~header nav ul {
+        height:110px;
+    }
+
     header nav a {
         border:none;
     }
-    
+
     header nav a:hover {
         border: none;
         text-decoration: underline;
     }
-    
+
     .burger,
     .burger::before,
     .burger::after{
@@ -52,29 +59,44 @@
         cursor:pointer;
         border-top: solid cyan 5px;
     }
-    
+
     .burger::before,
     .burger::after{
         content:"";
         display:block;
         position:absolute;
     }
-    
+
     .burger {
         position:relative;
+        display:block;
     }
-    
+
     .burger::before,
     .burger::after {
         height:5px;
         margin-top:5px;
     }
-    
+
     .burger::before {
         top:1px;
     }
-    
+
     .burger::after{
         top:12px;
+    }
+
+    #burger_toggle:checked~.burger {
+        transition: left 5px top -10px;
+        transform: 45deg;
+    }
+
+    #burger_toggle:checked~.burger::before{
+        opacity:0;
+    }
+
+    #burger_toggle:checked~.burger::after{
+        transition: top -20px;
+        transform: -90deg;
     }
 }
