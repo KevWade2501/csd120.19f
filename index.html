@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/CSD120Mobile.css">
+    <link rel="stylesheet" href="styles/baguetteBox.css">
+    <script src="styles/baguetteBag.js"></script>
 
     <title>Kevin's CSD120 Website</title>
 </head>
@@ -85,7 +87,7 @@
         </section>
         <section>
             <h2> My Sault College Courses </h2>
-            <table border="8">
+            <table>
                 <tr>
                     <td>Term</td>
                     <td>Course Code</td>
@@ -130,7 +132,7 @@
                     <td>CSO102</td>
                 </tr>
                 <tr>
-                    <td>PC Hardward & Networking</td>
+                    <td>PC Hardware & Networking</td>
                     <td>CST104</td>
                 </tr>
             </table>
@@ -211,7 +213,7 @@
                 <label><input type="radio" name="decision" value="no">No</label>
                 <label><input type="radio" name="decision" value="?" selected>None of your business</label>
                 <label for="life_meaning">What is the meaning of Life?</label>
-                <input type="textarea" name="lifesplaination" id="life_meaning" placeholder="Enter the correct answer here">
+                <input type="text" name="lifesplaination" id="life_meaning" placeholder="Enter the correct answer here">
                 <input type="button" value="SEND" class="send">
             </form>
         </section>
@@ -238,5 +240,10 @@
     </div>
 
 </div>
+<script src="styles/baguetteBox.js">
+    baguetteBox.run('.gallery-thumbnails', {
+    filter: /picsum\.photos\/id/i
+    });
+</script>
 </body>
 </html>
