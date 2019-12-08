@@ -263,7 +263,12 @@ table tr:nth-of-type(7) {
 }
 
 form {
-    display:grid;
+    display: grid;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+label {
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -278,5 +283,9 @@ form {
     padding-right: 2em;
     border: 1px purple;
     background-color: cyan;
-    color: cyan
+    color: purple;
+}
+
+#life_meaning {
+    grid-rows: span 10;
 }
