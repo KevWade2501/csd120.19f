@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/CSD120Mobile.css">
     <link rel="stylesheet" href="styles/baguetteBox.css">
-    <script src="styles/baguetteBag.js"></script>
+    <script src="styles/baguetteBox.js"></script>
 
     <title>Kevin's CSD120 Website</title>
 </head>
@@ -89,12 +88,12 @@
             <h2> My Sault College Courses </h2>
             <table>
                 <tr>
-                    <td>Term</td>
-                    <td>Course Code</td>
-                    <td>Course Name</td>
+                    <th>Term</th>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
                 </tr>
                 <tr>
-                    <td rowspan="5"> Fall </td>
+                    <th rowspan="5"> Fall </th>
                     <td>Python</td>
                     <td>CSD105</td>
                 </tr>
@@ -115,7 +114,7 @@
                     <td>TNY130</td>
                 </tr>
                 <tr>
-                    <td rowspan="5"> Winter </td>
+                    <th rowspan="5"> Winter </th>
                     <td>Business Applications 1</td>
                     <td>CSA103</td>
                 </tr>
@@ -190,16 +189,16 @@
         <section class="survey">
                 <h2>Survey</h2>
             <form action="https://formspree.io/xbjlpvwd" method="post">
-                <label for="name_input">What is your name?</label>
-                <input type="text" name="name_input" id="name_input" required>
+                <label for="name_field">What is your name?</label>
+                <input type="text" name="name_field" id="name_field" required>
                 <label for="email">What is your email?</label>
-                <input type="text" name="email_input" id="email" required>
-                <label for:"best_integer">Which integer is best?</label>
-                <input type="number" name="integer_input" id="best_integer">
+                <input type="email" name="email_field" id="email" required>
+                <label for="best_integer">Which integer is best?</label>
+                <input type="number" name="best_integer" id="best_integer">
                 <label for="best_day">Which day is best?</label>
                 <input type="date" name="best_day" id="best_day">
                 <label for="best_bear">Which bear is best?</label>
-                <select id="best_bear">
+                <select id="best_bear" name="best_bear">
                     <option></option>
                     <option>Black</option>
                     <option>Brown</option>
@@ -211,10 +210,10 @@
                 <label>Do you like radio buttons?</label>
                 <label><input type="radio" name="decision" value="yes">Yes</label>
                 <label><input type="radio" name="decision" value="no">No</label>
-                <label><input type="radio" name="decision" value="?" selected>None of your business</label>
+                <label><input type="radio" name="decision" value="?" checked>None of your business</label>
                 <label for="life_meaning">What is the meaning of Life?</label>
-                <input type="text" name="lifesplaination" id="life_meaning" placeholder="Enter the correct answer here">
-                <input type="button" value="SEND" class="send">
+                <textarea rows="10" name="life_meaning" id="life_meaning" placeholder="Enter the correct answer here"></textarea>
+                <input type="submit" value="SEND" class="send">
             </form>
         </section>
     </main>
@@ -233,16 +232,16 @@
         </a>
         2019
         </p>
-        <img src="sc-logo.png" sizes="70px" srcset="sc-logo@1.5x.png 105w", "sc-logo@2x.png 140w", "sc-logo@3x.png 210w", "sc-logo@4x.png 280x" alt="The Sault College Logo">
+        <img src="sc-logo.png" sizes="70px" srcset="sc-logo@1.5x.png 105w, sc-logo@2x.png 140w, sc-logo@3x.png 210w, sc-logo@4x.png 280w" alt="The Sault College Logo">
     </footer>
     <div class="back-to-top">
     <a href="#top">  ◤ </a>
     </div>
 
 </div>
-<script src="styles/baguetteBox.js">
+<script>
     baguetteBox.run('.gallery-thumbnails', {
-    filter: /picsum\.photos\/id/i
+        filter: /picsum\.photos\/id/i
     });
 </script>
 </body>
