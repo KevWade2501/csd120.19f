@@ -231,22 +231,22 @@ table{
     border-collapse:collapse;
 }
 
-table hd,
+table th,
 table td {
     background-color:rgba(0,0,0,0.05);
-    margin-top:0.3em;
-    margin-bottom:0.3em;
-    margin-left:1em;
-    margin-right:1em;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    padding-left:1em;
+    padding-right:1em;
     border-left: 3px solid purple;
     border-right: 3px solid purple;
 }
 
-table hd {
+table th {
     background-color: rgba(0,0,0,0.10);
 }
 
-table td:nth-of-type(odd) {
+table tr:nth-of-type(odd) td {
     background-color: rgba(0,0,0,0.10);
 }
 

@@ -58,6 +58,8 @@
         margin-top:1em;
         cursor:pointer;
         border-top: solid cyan 5px;
+
+        transition: all 200ms ease-in-out;
     }
 
     .burger::before,
@@ -86,9 +88,12 @@
         top:12px;
     }
 
+    #burger_toggle:checked ~ ul {
+        height: 110px;
+    }
+
     #burger_toggle:checked~.burger {
-        transition: left 5px top -10px;
-        transform: 45deg;
+        transform: rotate(45deg) translate(5px, 10px);
     }
 
     #burger_toggle:checked~.burger::before{
@@ -96,7 +101,6 @@
     }
 
     #burger_toggle:checked~.burger::after{
-        transition: top -20px;
-        transform: -90deg;
+        transform: rotate(-90deg) translate(23px, 3px);
     }
 }
